@@ -399,6 +399,7 @@
 			object = new THREE.Mesh(clothGeometry, clothMaterial);
 			object.position.set(0, 50, 0);
 			object.castShadow = true;
+			object.frustumCulled = false;
 			scene.add(object);
 
 			object.customDepthMaterial = new THREE.MeshDepthMaterial({
